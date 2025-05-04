@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 676084963}
   - component: {fileID: 676084962}
   - component: {fileID: 676084964}
+  - component: {fileID: 676084965}
   m_Layer: 0
   m_Name: UnitSelectionManager
   m_TagString: Untagged
@@ -322,6 +323,28 @@ MonoBehaviour:
   groupSelectedSound: {fileID: 0}
   doubleTapTime: 0.5
   cameraTransform: {fileID: 0}
+--- !u!114 &676084965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676084961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402563bb9b930504eb7acf2ba1486730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeControlKey: 34
+  releaseControlKey: 60
+  directControlRotationSpeed: 120
+  fpsCameraOffset: {x: 0, y: 1.7, z: 0}
+  cameraRotationSensitivity: 0.5
+  lookUpLimit: 80
+  lookDownLimit: -80
+  directControlUI: {fileID: 0}
+  controlIndicatorPrefab: {fileID: 0}
+  debugMode: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +970,7 @@ MonoBehaviour:
   revealSpeed: 0.1
   obscureSpeed: 0.2
   minFogOpacity: 0
-  maxFogOpacity: 0.9
+  maxFogOpacity: 1
   exploredFogOpacity: 0.5
   defaultVisionRange: 10
   visionUpdateInterval: 0.1

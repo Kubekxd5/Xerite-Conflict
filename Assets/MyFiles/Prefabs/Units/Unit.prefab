@@ -326,11 +326,11 @@ GameObject:
   - component: {fileID: 6330133876133657991}
   - component: {fileID: 3665620642571872527}
   - component: {fileID: 6836658632004012020}
+  - component: {fileID: -9049284563762052933}
   - component: {fileID: 8587886052655521351}
   - component: {fileID: -7084387530808178791}
   - component: {fileID: 4722225866285171879}
   - component: {fileID: 1708525674953923071}
-  - component: {fileID: -9049284563762052933}
   m_Layer: 6
   m_Name: Unit
   m_TagString: Unit
@@ -480,12 +480,12 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
-  cycleFormationKey: 3
-  formationSpacing: 1.5
+  cycleFormationKey: 20
+  formationSpacing: 1
   formationTightness: 1
-  spreadRandomness: 0.5
+  spreadRandomness: 1
   currentFormation: 0
-  formationKey: 51
+  formationKey: 3
   matchSpeedWithSlowestDefault: 0
   speedMatchKey: 53
   minMatchedSpeed: 1
@@ -493,6 +493,22 @@ MonoBehaviour:
   showFormationPreview: 1
   formationPreviewColor: {r: 0, g: 1, b: 0, a: 1}
   previewDisplayTime: 1
+--- !u!114 &-9049284563762052933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051560396303581495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f711cbb98bde18e438c93735acacea2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  visionRange: 5
 --- !u!114 &8587886052655521351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,22 +603,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-9049284563762052933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051560396303581495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f711cbb98bde18e438c93735acacea2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  visionRange: 5
 --- !u!1001 &2948644840110955966
 PrefabInstance:
   m_ObjectHideFlags: 0
