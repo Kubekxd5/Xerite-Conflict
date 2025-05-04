@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5962751504849960485}
   - component: {fileID: 8346942037733548866}
   - component: {fileID: 209360873239243317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,9 +124,11 @@ GameObject:
   - component: {fileID: 693835041208775073}
   - component: {fileID: 5863281438884099970}
   - component: {fileID: -3237519282495959639}
-  m_Layer: 0
+  - component: {fileID: 1316328773334956586}
+  - component: {fileID: 9218698223449743258}
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,3 +276,39 @@ MonoBehaviour:
   rotationSensitivity: 0.01
   positionPrecision: 0.01
   scalePrecision: 0.01
+--- !u!114 &1316328773334956586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174211760402333369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed73cc0756e7fb40a511b4d1f29f6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  fogOfWarPrefab: {fileID: 2857478318570494979, guid: 2853b4ccd29e0b8448dd5053f519c076, type: 3}
+  fogOfWarPosition: {x: 0, y: 0, z: 0}
+  fogInitDelay: 0.5
+  verboseLogging: 0
+  alwaysRevealMapForDebugging: 0
+--- !u!114 &9218698223449743258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174211760402333369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f711cbb98bde18e438c93735acacea2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  visionRange: 5

@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Building
+  - Neutral
+  - Unit
   - GroundUnit
-  - AirUnit
+  - Fog
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - Unit
   - Ground
-  - 
+  - Fog
   - 
   - 
   - 
